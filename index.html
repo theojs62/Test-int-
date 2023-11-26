@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test inté</title>
+    <link rel="stylesheet" href="./assets/vendors/swiper/swiper-bundle.min.css">
+    <link href="./styles/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="py-4 md:py-6 sticky top-0 bg-white z-40">
+        <div class="container-1 px-6 md:px-12">
+            <nav class="flex items-center gap-6">
+                <div class="inline-flex md:hidden">
+                    <button type="button" id="menu-mobile-button"
+                        class="h-8 w-8 transition-transform duration-300 active:scale-110">
+                        <img class="block h-full w-full" src="./assets/images/menu-hamburger.svg" alt="menu-hamburger">
+                    </button>
+                </div>
+                <div class="mr-auto md:mr-16">
+                    <h3 class="text-2xl sm:text-3xl font-semibold capitalize">
+                        Lorem Ipsum
+                    </h3>
+                </div>
+                <ul class="hidden md:flex gap-12 mr-auto">
+                    <li>
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Instructors</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hidden md:flex items-center gap-4">
+                    <button type="button" class="h-6 w-6 transition-transform duration-300 active:scale-110">
+                        <img class="block h-full w-full" src="./assets/images/bx_search.svg" alt="search-icon">
+                    </button>
+                    <a href="#" class="py-3 px-18px nav-link text-primary hover:text-primaryActive">
+                        Login
+                    </a>
+                    <a href="#" class="py-3 px-18px btn-primary">
+                        Register
+                    </a>
+                </div>
+
+                <div class="inline-flex md:hidden">
+                    <button type="button" class="h-8 w-8 transition-transform duration-300 active:scale-110">
+                        <img class="block h-full w-full" src="./assets/images/user-icon.svg" alt="user-icon">
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- component -->
+    <aside id="menu-mobile"
+        class="fixed w-full flex top-0 left-0 z-50 h-screen overflow-y-austo transition-transform -translate-x-full bg-black/30"
+        tabindex="-1">
+        <div class="w-full sm:w-80 p-4 bg-white">
+            <div class="flex items-center gap-4">
+                <h4 class="text-2xl font-semibold capitalize mr-auto">
+                    Lorem Ipsum
+                </h4>
+                <button type="button" id="menu-mobile-close"
+                    class="menu-mobile-close transition-transform duration-300 active:scale-110">
+                    ✖
+                </button>
+            </div>
+            <div class="my-8">
+                <div class="relative">
+                    <input type="search" name="search-bar" id="search-bar"
+                        class="py-3 pl-3 pr-12 w-full rounded-md bg-whitesmoke text-black placeholder:text-gray-400">
+                    <button type="button"
+                        class="absolute top-1/2 -translate-y-1/2 right-4 h-6 w-6 transition-transform duration-300 active:scale-110">
+                        <img class="block h-full w-full" src="./assets/images/bx_search.svg" alt="search-icon">
+                    </button>
+                </div>
+            </div>
+            <ul class="space-y-6">
+                <li>
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Courses</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Instructors</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <ul class="mt-8 space-y-8">
+                <li>
+                    <a href="#" class="py-3 px-18px nav-link text-primary hover:text-primaryActive">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="py-3 px-18px btn-primary">
+                        Register
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-mobile-overlay" class="overlay flex-1 bg-black/30"></div>
+    </aside>
+    <!-- Main -->
+    <main>
+        <section id="section-hero" class="section-hero pt-0 md:pt-32 pb-10 md:pb-14">
+            <div class="container-1 md:px-12">
+                <div class="px-6 md:px-12 lg:px-24 rounded-20px bg-whitesmoke relative">
+                    <div class="hidden md:block news-position">
+                        <h1 class="text-whitesmoke font-bold text-120px capitalize">
+                            News
+                        </h1>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-12 max-h-322px">
+                        <div class="flex flex-col justify-center hero-left pt-10 md:py-12 lg:py-20 mr-auto md:mr-36">
+                            <h6 class="mb-3 md:hidden text-black font-bold text-base capitalize">
+                                News
+                            </h6>
+                            <h1
+                                class="mb-4 text-xl sm:text-4xl lg:text-5xl 2xl:text-6xl text-black font-bold capitalize">
+                                Lorem Ipsum
+                            </h1>
+                            <p class="text-base font-light text-black line-clamp-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper egestas
+                                augue, in fringilla ipsum
+                                condimentum at.
+                            </p>
+                        </div>
+                        <div class="mx-auto hero-right rounded-20px relative">
+                            <div class="box-instructors bg-white shadow-1 rounded-20px p-6 text-center">
+                                <h4 class="font-semibold text-xs md:text-xl text-gray1 line-clamp-3">
+                                    Learn from best <span class="text-primary">instructors</span> around the globe
+                                </h4>
+                                <div class="mt-4 isolate flex justify-center -space-x-2 overflow-hidden">
+                                    <img class="relative z-30 inline-block w-6 h-6 md:w-11 md:h-11 rounded-full ring-2 ring-white"
+                                        src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                    <img class="relative z-20 inline-block w-6 h-6 md:w-11 md:h-11 rounded-full ring-2 ring-white"
+                                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                        alt="">
+                                </div>
+                            </div>
+                            <img class="md:scale-y-150 block h-full w-full rounded-20px"
+                                src="./assets/images/hero-image-1.png" alt="hero-image">
+                            <div class="hero-right-box px-3 pt-3 pb-7 bg-white shadow-2 rounded-20px text-center">
+                                <div class="mx-auto h-6 w-6 md:h-9 md:w-9">
+                                    <img class="block h-full w-full" src="./assets/images/user-icon-2.svg" alt="...">
+                                </div>
+                                <h3 class="my-1 md:my-2 text-xl md:text-2xl font-semibold uppercase text-primary">
+                                    15k
+                                </h3>
+                                <div class="font-size10px md:text-xs text-gray1 font-normal line-clamp-2">
+                                    Amazing students around the globe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-2" class="section-2 pt-268px md:pt-24 pb-14 md:pb-24">
+            <div class="container-1 px-6 md:px-12">
+                <div class="flex items-start gap-6 lg:gap-8 md:h-420px overflow-x-auto pt-10">
+                    <div class="bg-whitesmoke box-info rounded-20px px-7">
+                        <div class="-mt-10 pb-7">
+                            <div class="box-icon-size rounded-20px p-4 bg-primary text-whitesmoke">
+                                <svg class="bi-book-icon h-full w-full" viewBox="0 0 44 44" fill="none">
+                                    <g>
+                                        <path
+                                            d="M2.75 7.77698C5.18375 6.75948 8.6735 5.66223 12.067 5.32123C15.7245 4.95273 18.8265 5.49448 20.625 7.38923V34.1907C18.0537 32.7332 14.795 32.5325 11.7893 32.835C8.54425 33.165 5.27175 34.1027 2.75 35.0652V7.77698ZM23.375 7.38923C25.1735 5.49448 28.2755 4.95273 31.933 5.32123C35.3265 5.66223 38.8162 6.75948 41.25 7.77698V35.0652C38.7255 34.1027 35.4557 33.1622 32.2108 32.8377C29.2023 32.5325 25.9463 32.7305 23.375 34.1907V7.38923ZM22 4.90323C19.2913 2.57398 15.3643 2.22748 11.7893 2.58498C7.62575 3.00573 3.42375 4.43298 0.80575 5.62373C0.565535 5.73298 0.361832 5.90905 0.218958 6.13092C0.0760834 6.35279 7.30714e-05 6.61109 0 6.87498L0 37.125C6.36955e-05 37.355 0.0578521 37.5814 0.168072 37.7833C0.278292 37.9853 0.43742 38.1563 0.63088 38.2808C0.82434 38.4054 1.04595 38.4793 1.2754 38.496C1.50486 38.5127 1.73483 38.4715 1.94425 38.3762C4.36975 37.2762 8.2775 35.9535 12.0642 35.5712C15.939 35.1807 19.1868 35.8105 20.9275 37.983C21.0563 38.1436 21.2196 38.2732 21.4052 38.3622C21.5909 38.4513 21.7941 38.4975 22 38.4975C22.2059 38.4975 22.4091 38.4513 22.5948 38.3622C22.7804 38.2732 22.9437 38.1436 23.0725 37.983C24.8133 35.8105 28.061 35.1807 31.933 35.5712C35.7225 35.9535 39.633 37.2762 42.0558 38.3762C42.2652 38.4715 42.4951 38.5127 42.7246 38.496C42.9541 38.4793 43.1757 38.4054 43.3691 38.2808C43.5626 38.1563 43.7217 37.9853 43.8319 37.7833C43.9421 37.5814 43.9999 37.355 44 37.125V6.87498C43.9999 6.61109 43.9239 6.35279 43.781 6.13092C43.6382 5.90905 43.4345 5.73298 43.1942 5.62373C40.5762 4.43298 36.3743 3.00573 32.2108 2.58498C28.6358 2.22473 24.7087 2.57398 22 4.90323Z"
+                                            fill="currentColor" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pb-7">
+                            <h3 class="mb-4 text-black text-xl sm:text-2xl font-bold line-clamp-1">
+                                Lorem ipsum
+                            </h3>
+                            <p class="text-black text-sm sm:text-base font-light line-clamp-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
+                                Suspendisse sit amet erat non.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-primary box-info rounded-20px px-7 md:mt-12 md:self-center">
+                        <div class="-mt-10 pb-7">
+                            <div class="box-icon-size rounded-20px p-4 bg-whitesmoke text-primary">
+                                <svg class="fe-shopping-bag-icon h-full w-full" viewBox="0 0 44 44" fill="none">
+                                    <path
+                                        d="M14.6666 14.6667V9.16667C14.6666 8.19421 15.0529 7.26157 15.7405 6.57394C16.4282 5.88631 17.3608 5.5 18.3333 5.5H25.6666C26.6391 5.5 27.5717 5.88631 28.2593 6.57394C28.947 7.26157 29.3333 8.19421 29.3333 9.16667V14.6667H34.8333C35.8057 14.6667 36.7384 15.053 37.426 15.7406C38.1136 16.4282 38.4999 17.3609 38.4999 18.3333V34.8333C38.4999 35.8058 38.1136 36.7384 37.426 37.4261C36.7384 38.1137 35.8057 38.5 34.8333 38.5H9.16661C8.19415 38.5 7.26151 38.1137 6.57388 37.4261C5.88625 36.7384 5.49994 35.8058 5.49994 34.8333V18.3333C5.49994 17.3609 5.88625 16.4282 6.57388 15.7406C7.26151 15.053 8.19415 14.6667 9.16661 14.6667H14.6666ZM9.16661 18.3333V34.8333H34.8333V18.3333H29.3296V23.8333H25.6666V18.3333H18.3333V23.8333H14.6666V18.3333H9.16661ZM18.3333 14.6667H25.6666V9.16667H18.3333V14.6667Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pb-7">
+                            <h3 class="mb-4 text-black text-xl sm:text-2xl font-bold line-clamp-1">
+                                Lorem ipsum
+                            </h3>
+                            <p class="text-black text-sm sm:text-base font-light line-clamp-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
+                                Suspendisse sit amet erat non.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-whitesmoke box-info rounded-20px px-7">
+                        <div class="-mt-10 pb-7">
+                            <div class="box-icon-size rounded-20px p-4 bg-primary text-whitesmoke">
+                                <svg class="ci-group-icon h-full w-full" viewBox="0 0 44 44" fill="none">
+                                    <path
+                                        d="M16.5 5.5C14.0689 5.5 11.7373 6.46577 10.0182 8.18485C8.29911 9.90394 7.33334 12.2355 7.33334 14.6667C7.33334 17.0978 8.29911 19.4294 10.0182 21.1485C11.7373 22.8676 14.0689 23.8333 16.5 23.8333C18.9312 23.8333 21.2627 22.8676 22.9818 21.1485C24.7009 19.4294 25.6667 17.0978 25.6667 14.6667C25.6667 12.2355 24.7009 9.90394 22.9818 8.18485C21.2627 6.46577 18.9312 5.5 16.5 5.5ZM11 14.6667C11 13.208 11.5795 11.809 12.6109 10.7776C13.6424 9.74613 15.0413 9.16667 16.5 9.16667C17.9587 9.16667 19.3576 9.74613 20.3891 10.7776C21.4205 11.809 22 13.208 22 14.6667C22 16.1254 21.4205 17.5243 20.3891 18.5558C19.3576 19.5872 17.9587 20.1667 16.5 20.1667C15.0413 20.1667 13.6424 19.5872 12.6109 18.5558C11.5795 17.5243 11 16.1254 11 14.6667ZM30.998 15.0663C30.4824 14.8036 29.912 14.6667 29.3333 14.6667V11C30.4911 11.0001 31.6324 11.2743 32.6639 11.8002C33.6954 12.3261 34.5876 13.0888 35.2677 14.0258C35.9478 14.9628 36.3964 16.0475 36.5767 17.1911C36.757 18.3348 36.664 19.5049 36.3052 20.6057C35.9465 21.7065 35.3321 22.7067 34.5126 23.5245C33.693 24.3423 32.6914 24.9544 31.5898 25.3107C30.4882 25.667 29.3179 25.7575 28.1746 25.5746C27.0314 25.3918 25.9477 24.9408 25.0122 24.2587L27.1718 21.296C27.5807 21.5936 28.0467 21.8034 28.5406 21.9122C29.0344 22.021 29.5455 22.0264 30.0415 21.9282C30.5376 21.83 31.008 21.6303 31.4231 21.3415C31.8383 21.0528 32.1892 20.6813 32.4539 20.2503C32.7186 19.8194 32.8912 19.3384 32.961 18.8376C33.0309 18.3367 32.9963 17.8268 32.8596 17.34C32.7228 16.8531 32.4869 16.3998 32.1665 16.0085C31.8461 15.6172 31.4483 15.2965 30.998 15.0663ZM36.663 38.5C36.6625 36.5562 35.8901 34.6922 34.5157 33.3177C33.1412 31.9432 31.2771 31.1708 29.3333 31.1703V27.5C32.2506 27.5005 35.0482 28.6596 37.111 30.7224C39.1738 32.7852 40.3329 35.5828 40.3333 38.5H36.663ZM29.3333 38.5H25.6667C25.6667 36.0688 24.7009 33.7373 22.9818 32.0182C21.2627 30.2991 18.9312 29.3333 16.5 29.3333C14.0689 29.3333 11.7373 30.2991 10.0182 32.0182C8.29911 33.7373 7.33334 36.0688 7.33334 38.5H3.66667C3.66667 35.0964 5.01875 31.8322 7.42547 29.4255C9.83218 27.0187 13.0964 25.6667 16.5 25.6667C19.9036 25.6667 23.1678 27.0187 25.5745 29.4255C27.9813 31.8322 29.3333 35.0964 29.3333 38.5Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pb-7">
+                            <h3 class="mb-4 text-black text-xl sm:text-2xl font-bold line-clamp-1">
+                                Lorem ipsum
+                            </h3>
+                            <p class="text-black text-sm sm:text-base font-light line-clamp-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
+                                Suspendisse sit amet erat non.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-primary box-info rounded-20px px-7 md:mt-12 md:self-center">
+                        <div class="-mt-10 pb-7">
+                            <div class="box-icon-size rounded-20px p-4 bg-whitesmoke text-primary">
+                                <svg class="bi-book-icon h-full w-full" viewBox="0 0 44 44" fill="none">
+                                    <path
+                                        d="M40.6055 17.7031H29.6055C29.4164 17.7031 29.2617 17.8578 29.2617 18.0469V20.1094C29.2617 20.2984 29.4164 20.4531 29.6055 20.4531H40.6055C40.7945 20.4531 40.9492 20.2984 40.9492 20.1094V18.0469C40.9492 17.8578 40.7945 17.7031 40.6055 17.7031ZM34.8477 23.5469H29.6055C29.4164 23.5469 29.2617 23.7016 29.2617 23.8906V25.9531C29.2617 26.1422 29.4164 26.2969 29.6055 26.2969H34.8477C35.0367 26.2969 35.1914 26.1422 35.1914 25.9531V23.8906C35.1914 23.7016 35.0367 23.5469 34.8477 23.5469ZM20.509 13.8574H18.6484C18.382 13.8574 18.1672 14.0723 18.1672 14.3387V24.9949C18.1672 25.1496 18.2402 25.2914 18.3648 25.3816L24.7629 30.048C24.9777 30.2027 25.2785 30.1598 25.4332 29.9449L26.5375 28.4367V28.4324C26.6922 28.2176 26.6449 27.9168 26.4301 27.7621L20.9859 23.8262V14.3387C20.9902 14.0723 20.7711 13.8574 20.509 13.8574Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M34.5812 28.9566H32.0977C31.857 28.9566 31.6293 29.0813 31.5004 29.2875C30.9547 30.1512 30.3187 30.9504 29.5883 31.6809C28.3293 32.9398 26.8641 33.9281 25.2355 34.6156C23.5469 35.3289 21.7551 35.6898 19.9074 35.6898C18.0555 35.6898 16.2637 35.3289 14.5793 34.6156C12.9508 33.9281 11.4855 32.9398 10.2266 31.6809C8.96758 30.4219 7.9793 28.9566 7.2918 27.3281C6.57851 25.6438 6.21758 23.852 6.21758 22C6.21758 20.1481 6.57851 18.3606 7.2918 16.6719C7.9793 15.0434 8.96758 13.5781 10.2266 12.3191C11.4855 11.0602 12.9508 10.0719 14.5793 9.38438C16.2637 8.6711 18.0598 8.31016 19.9074 8.31016C21.7594 8.31016 23.5512 8.6711 25.2355 9.38438C26.8641 10.0719 28.3293 11.0602 29.5883 12.3191C30.3187 13.0496 30.9547 13.8488 31.5004 14.7125C31.6293 14.9188 31.857 15.0434 32.0977 15.0434H34.5812C34.8777 15.0434 35.0668 14.734 34.9336 14.4719C32.132 8.89883 26.4516 5.27657 20.1094 5.20352C10.8238 5.0875 3.11094 12.6887 3.09375 21.9656C3.07656 31.2598 10.609 38.8008 19.9031 38.8008C26.327 38.8008 32.1019 35.1656 34.9336 29.5281C35.0668 29.266 34.8734 28.9566 34.5812 28.9566Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pb-7">
+                            <h3 class="mb-4 text-black text-xl sm:text-2xl font-bold line-clamp-1">
+                                Lorem ipsum
+                            </h3>
+                            <p class="text-black text-sm sm:text-base font-light line-clamp-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
+                                Suspendisse sit amet erat non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-3" class="section-3 pb-14 md:pb-24 pt-24 md:pt-0">
+            <div class="container-1 px-6 md:px-12">
+                <div class="flex flex-col md:flex-row gap-10 md:gap-28">
+                    <div>
+                        <div class="bg-primary rounded-20px images-wrapper-size relative">
+                            <div class="rounded-20px bg-lightgray images-wrapper-size__one">
+                                <img class="block h-full w-full rounded-20px object-cover"
+                                    src="./assets/images/image-1.png" alt="...">
+                            </div>
+                            <div class="rounded-20px bg-lightgray images-wrapper-size__two">
+                                <img class="block h-full w-full rounded-20px object-cover"
+                                    src="./assets/images/image-2.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 md:mt-20">
+                        <h2 class="mb-6 text-black capitalize text-xl sm:font-size45 font-bold">
+                            Lorem Ipsum
+                        </h2>
+                        <h5 class="mb-8 text-black capitalize text-base sm:text-xl font-light">
+                            Lorem Ipsum
+                        </h5>
+                        <p class="text-black text-sm sm:text-base font-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
+                            Suspendisse sit amet erat non
+                            nisl dignissim faucibus id ut augue. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vestibulum at posuere
+                            libero. Suspendisse sit amet erat non nisl dignissim faucibus id ut augue.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at posuere libero.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-4" class="section-4 pb-14 md:pb-24">
+            <div class="container-1 px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="md:col-span-1">
+                        <div class="flex flex-row sm:flex-col gap-3 items-end sm:items-start">
+                            <h2
+                                class="our-students-text mr-auto text-2xl leading-tight sm:text-5xl sm:leading-tight font-bold text-black capitalize">
+                                What our <span class="text-primary line-1">Students</span> say about us
+                            </h2>
+                            <div class="sm:mt-6 flex gap-3 sm:gap-8">
+                                <button type="button" class="swiper-btn-prev">
+                                    <svg class="h-full w-full" viewBox="0 0 30 30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.9375 21.25L11.5625 15L20.9375 8.75003C21.0606 8.66795 21.1664 8.56243 21.2487 8.43949C21.331 8.31654 21.3883 8.17859 21.4174 8.0335C21.4464 7.88841 21.4465 7.73902 21.4178 7.59387C21.3891 7.44872 21.3321 7.31064 21.25 7.18753C21.1679 7.06441 21.0624 6.95867 20.9395 6.87634C20.8165 6.794 20.6786 6.73669 20.5335 6.70767C20.3884 6.67865 20.239 6.6785 20.0939 6.70721C19.9487 6.73593 19.8106 6.79295 19.6875 6.87503L9.06001 13.96C8.88881 14.0742 8.74844 14.2288 8.65136 14.4103C8.55427 14.5917 8.50348 14.7943 8.50348 15C8.50348 15.2058 8.55427 15.4084 8.65136 15.5898C8.74844 15.7712 8.88881 15.9259 9.06001 16.04L19.6875 23.125C19.8106 23.2071 19.9487 23.2641 20.0939 23.2928C20.239 23.3216 20.3884 23.3214 20.5335 23.2924C20.6786 23.2634 20.8165 23.2061 20.9395 23.1237C21.0624 23.0414 21.1679 22.9356 21.25 22.8125C21.3321 22.6894 21.3891 22.5513 21.4178 22.4062C21.4465 22.261 21.4464 22.1116 21.4174 21.9666C21.3883 21.8215 21.331 21.6835 21.2487 21.5606C21.1664 21.4376 21.0606 21.3321 20.9375 21.25Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="swiper-btn-next">
+                                    <svg class="h-full w-full" viewBox="0 0 30 30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.06249 21.25L18.4375 15L9.06249 8.75003C8.93938 8.66795 8.83363 8.56243 8.7513 8.43949C8.66897 8.31654 8.61165 8.17859 8.58263 8.0335C8.55362 7.88841 8.55346 7.73902 8.58218 7.59387C8.61089 7.44872 8.66791 7.31064 8.74999 7.18753C8.83207 7.06441 8.93759 6.95867 9.06053 6.87634C9.18347 6.794 9.32143 6.73669 9.46652 6.70767C9.61161 6.67865 9.761 6.6785 9.90615 6.70721C10.0513 6.73593 10.1894 6.79295 10.3125 6.87503L20.94 13.96C21.1112 14.0742 21.2516 14.2288 21.3486 14.4103C21.4457 14.5917 21.4965 14.7943 21.4965 15C21.4965 15.2058 21.4457 15.4084 21.3486 15.5898C21.2516 15.7712 21.1112 15.9259 20.94 16.04L10.3125 23.125C10.1894 23.2071 10.0513 23.2641 9.90615 23.2928C9.761 23.3216 9.61161 23.3214 9.46652 23.2924C9.32143 23.2634 9.18347 23.2061 9.06053 23.1237C8.93759 23.0414 8.83207 22.9356 8.74999 22.8125C8.66791 22.6894 8.61089 22.5513 8.58218 22.4062C8.55346 22.261 8.55362 22.1116 8.58263 21.9666C8.61165 21.8215 8.66897 21.6835 8.7513 21.5606C8.83363 21.4376 8.93938 21.3321 9.06249 21.25Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <div class="swiper swiper-testimonials overflow-hidden">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="bg-gray-100 shadow-3 rounded-20px h-272px p-8">
+                                        <figcaption class="flex items-center space-x-4">
+                                            <img class="our-students-image"
+                                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/robert-brown.png"
+                                                alt="profile picture">
+                                            <div class="space-y-0.5 text-left">
+                                                <div class="capitalize text-xl font-bold text-black line-clamp-1">Mohh
+                                                    Jumah</div>
+                                                <div class="capitalize text-lg font-semibold text-primary line-clamp-1">
+                                                    Senior Developer
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                        <div class="mt-5">
+                                            <p class="font-light text-base text-gray1 line-clamp-5">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac
+                                                blandit nam massa massa elementum mollis lectus.
+                                                Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis
+                                                imperdiet venenatis
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="bg-gray-100 shadow-3 rounded-20px h-272px p-8">
+                                        <figcaption class="flex items-center space-x-4">
+                                            <img class="our-students-image"
+                                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png"
+                                                alt="profile picture">
+                                            <div class="space-y-0.5 text-left">
+                                                <div class="capitalize text-xl font-bold text-black line-clamp-1">John
+                                                    Mark</div>
+                                                <div class="capitalize text-lg font-semibold text-primary line-clamp-1">
+                                                    Data Analyst
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                        <div class="mt-5">
+                                            <p class="font-light text-base text-gray1 line-clamp-5">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac
+                                                blandit nam massa massa elementum mollis lectus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="container-1 px-6 md:px-12">
+            <div class="pb-8 pt-16 sm:pt-24 lg:pt-32">
+                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                    <div class="space-y-8">
+                        <h3 class="text-2xl sm:text-3xl font-semibold capitalize text-white">
+                            Lorem Ipsum
+                        </h3>
+                        <p class="text-base font-light text-white max-w-309px">
+                            We are not here to sell you products, we sell value through our expertise.
+                        </p>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-primary hover:text-primaryActive">
+                                <span class="sr-only">Facebook</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+
+                            <a href="#" class="text-primary hover:text-primaryActive">
+                                <span class="sr-only">Twitter</span>
+                                <svg class="h-6 w-6" viewBox="0 0 25 25" fill="none">
+                                    <path
+                                        d="M12.128 0C5.50121 0 0.127991 5.40236 0.127991 12.0651C0.127991 18.7278 5.50121 24.1302 12.128 24.1302C18.7548 24.1302 24.128 18.7278 24.128 12.0651C24.128 5.40236 18.7548 0 12.128 0ZM17.895 9.09461C17.903 9.22118 17.903 9.35314 17.903 9.48241C17.903 13.4359 14.9083 17.9899 9.43603 17.9899C7.74853 17.9899 6.18424 17.4971 4.86638 16.6488C5.10745 16.6757 5.33781 16.6865 5.58424 16.6865C6.9771 16.6865 8.25745 16.2125 9.27799 15.4099C7.97085 15.383 6.87263 14.5212 6.49763 13.3362C6.95567 13.4036 7.36817 13.4036 7.8396 13.2824C7.16654 13.1449 6.56158 12.7774 6.1275 12.2423C5.69341 11.7071 5.45697 11.0374 5.45835 10.3469V10.3092C5.8521 10.5327 6.31549 10.6701 6.80031 10.6889C6.39275 10.4158 6.0585 10.0458 5.82722 9.61176C5.59593 9.17768 5.47475 8.69293 5.47442 8.20049C5.47442 7.64302 5.61906 7.13403 5.87888 6.69236C6.62594 7.617 7.55816 8.37324 8.61495 8.91192C9.67174 9.4506 10.8294 9.75968 12.0128 9.81905C11.5923 7.78576 13.103 6.14027 14.9191 6.14027C15.7762 6.14027 16.5476 6.50115 17.0914 7.08286C17.7637 6.95628 18.4066 6.70313 18.9798 6.3638C18.7575 7.05593 18.2914 7.64033 17.6726 8.00928C18.2726 7.94465 18.8512 7.77768 19.3869 7.54338C18.9825 8.14125 18.4762 8.67179 17.895 9.09461Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-primary hover:text-primaryActive">
+                                <span class="sr-only">Instagram</span>
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-primary hover:text-primaryActive">
+                                <span class="sr-only">Linkedin</span>
+                                <svg class="h-6 w-6" viewBox="0 0 25 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.02729 6.969H13.4841V8.819C14.1261 7.755 15.7725 6.799 18.2457 6.799C22.9869 6.799 24.1125 8.917 24.1125 12.803V20H19.3125V13.688C19.3125 11.475 18.6705 10.227 17.0361 10.227C14.7693 10.227 13.8273 11.572 13.8273 13.687V20H9.02729V6.969ZM0.796488 19.83H5.59649V6.799H0.796488V19.83ZM6.28409 2.55C6.28427 2.88528 6.20447 3.21724 6.04935 3.52659C5.89423 3.83594 5.66687 4.11651 5.38049 4.352C4.80017 4.83262 4.01466 5.10165 3.19649 5.1C2.37976 5.09954 1.59606 4.8312 1.01489 4.353C0.729541 4.11671 0.502951 3.83582 0.3481 3.52643C0.19325 3.21704 0.113183 2.88522 0.112488 2.55C0.112488 1.873 0.436488 1.225 1.01609 0.747C1.59675 0.268158 2.38078 -0.000299211 3.19769 2.50265e-07C4.01609 2.50265e-07 4.80089 0.269 5.38049 0.747C5.95889 1.225 6.28409 1.873 6.28409 2.55Z"
+                                        fill="currentColor" />
+                                </svg>
+
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="mt-16 xl:col-span-2 xl:mt-0">
+                        <div class="grid grid-cols-3 md:grid-cols-5 gap-6">
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="index.html" class="footer-link active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Courses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Instructors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        SME
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Solution
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Place a Call
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Email
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3">
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Job Opening
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        News
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Research
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="space-y-3 col-span-2 sm:col-span-1">
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Uk Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">
+                                        Terms of Use
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
+                    <div>
+                        <h3 class="text-sm font-semibold leading-6 text-white">Subscribe to get latest updates</h3>
+                         
+                    </div>
+                    <form class="mt-6 sm:flex sm:max-w-md lg:mt-0">
+                        <label for="email-address" class="sr-only">Email address</label>
+                        <input type="email" name="email-address" id="email-address" autocomplete="email" required=""
+                            class="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-black shadow-sm  placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-inset focus:ring-primary sm:w-56 sm:text-sm sm:leading-6"
+                            placeholder="Enter your email">
+                        <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
+                            <button type="submit"
+                                class="flex w-full items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primaryActive focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- script -->
+<script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
